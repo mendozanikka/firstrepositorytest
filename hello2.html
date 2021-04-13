@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Just Saying Hello </title>
+<style>
+body {
+color: blue;
+}
+h1 {
+color: red;
+font-family: Arial,sans-serif;
+font-size: 32px;
+}
+</style>
+</head>
+<body>
+<h1>Hello</h1>
+<p>
+p is for paragraph. h1 is for header. this is used to tell the browser how i want script to be formatted. 
+add style to tell browser that it should switch to css. it's no longer html, so you are now linking the two. 
+cool, right?
+</p>
+<button id= "color">Change Color!</button>
+<script>
+document.getElementByid('color').onClick =changeColor;
+var currentColor = "blue";
+
+function changeColor() {
+		if(currentColor == "blue"){
+	document.body.style.color = "black";
+	currentColor = "black";
+		}else{
+	document.body.style.color = "blue";
+	currentColor = "blue";}
+	return currentColor;
+  	}
+</script>
+</body>
+</html>
